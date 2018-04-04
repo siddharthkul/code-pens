@@ -1,0 +1,279 @@
+@charset "UTF-8";
+html {
+  
+}
+body {
+  margin: 0;
+  font-family: source sans pro, Arial, Helvetica, sans-serif;
+}
+body > h1,
+p.intro,
+ul > li > a:link,
+ul > li > a:visited {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 1px rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+body > h1 {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.7),
+    0 2px 20px rgba(0, 0, 0, 0.9);
+  font-size: 40px;
+  margin: 20px auto 5px;
+}
+p.intro {
+  margin-top: 0;
+}
+ul {
+  list-style: none;
+  width: 306px;
+  margin: 0 auto;
+  padding: 0;
+}
+ul > li {
+  display: block;
+  float: left;
+  width: 100px;
+  margin-right: 3px;
+}
+ul > li:last-child {
+  margin-right: 0;
+}
+ul > li > a {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px;
+}
+ul > li > a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+ul > li > a.currentPage {
+  border-bottom: 3px solid #d4d3b9;
+}
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.dock {
+  margin: 100px auto 0;
+  overflow: visible;
+  position: relative;
+}
+.icon,
+.dock > .bg,
+.dock > .tip > .arrow {
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  float: left;
+  position: relative;
+  border-radius: 50%;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(33, 20, 38, 0.6);
+}
+.icon > a:link,
+.icon > a:visited,
+.icon > a:hover,
+.dock > .tip {
+  color: #f2efdf;
+  text-decoration: none;
+}
+.dock > .bg,
+.dock > .tip {
+  background: #656f8c;
+}
+.dock > .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.dock > .tip {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: -45px;
+  opacity: 0;
+  z-index: -1;
+}
+.dock > .tip > .arrow {
+  display: inline-block;
+  font-size: 16px;
+  color: #656f8c;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  text-shadow: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@charset "UTF-8";
+html {
+  background: #acb6e5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #86fde8,
+    #acb6e5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #86fde8,
+    #acb6e5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  margin: 0;
+  font-family: source sans pro, Arial, Helvetica, sans-serif;
+}
+body > h1,
+p.intro,
+ul > li > a:link,
+ul > li > a:visited {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 1px rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+body > h1 {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.7),
+    0 2px 20px rgba(0, 0, 0, 0.9);
+  font-size: 40px;
+  margin: 20px auto 5px;
+}
+p.intro {
+  margin-top: 0;
+}
+ul {
+  list-style: none;
+  width: 306px;
+  margin: 0 auto;
+  padding: 0;
+}
+ul > li {
+  display: block;
+  float: left;
+  width: 100px;
+  margin-right: 3px;
+}
+ul > li:last-child {
+  margin-right: 0;
+}
+ul > li > a {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px;
+}
+ul > li > a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+ul > li > a.currentPage {
+  border-bottom: 3px solid #d4d3b9;
+}
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.dock {
+  margin: 200px auto 0;
+  overflow: visible;
+  position: relative;
+}
+.icon,
+.dock > .bg,
+.dock > .tip > .arrow {
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  float: left;
+  position: relative;
+  border-radius: 50%;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(33, 20, 38, 0.6);
+}
+.icon > a:link,
+.icon > a:visited,
+.icon > a:hover,
+.dock > .tip {
+  color: #f2efdf;
+  text-decoration: none;
+}
+.dock > .bg,
+.dock > .tip {
+  background:rgba(0,0,0,0.33);
+}
+.dock > .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.dock > .tip {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: -45px;
+  opacity: 0;
+  z-index: -1;
+}
+.dock > .tip > .arrow {
+  display: inline-block;
+  font-size: 16px;
+  color: #656f8c;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  text-shadow: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.material-icons {
+  position: relative;
+  bottom: 7px;
+  font-size:42px;
+}
