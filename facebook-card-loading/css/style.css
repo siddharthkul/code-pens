@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background-color: #FFE2E2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 380px;
+  padding: 16px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.item {
+  border: 8px solid #fff;
+}
+
+.rect {
+  height: 64px;
+  width: 64px;
+  border-right: 315px solid white;
+}
+
+.line {
+  height: 32px;
+}
+
+.imageBox {
+  height: 186px;
+}
+
+.pre {
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #e1e1e1), color-stop(33%, #eeeeee));
+  background: linear-gradient(to right, #eeeeee 8%, #e1e1e1 18%, #eeeeee 33%);
+  background-size: 200% 50px;
+  -webkit-animation: preloadAnimation 2s infinite;
+          animation: preloadAnimation 2s infinite;
+}
+
+@-webkit-keyframes preloadAnimation {
+  from {
+    background-position: -280px 0;
+  }
+  to {
+    background-position: 300px 0;
+  }
+}
+
+@keyframes preloadAnimation {
+  from {
+    background-position: -280px 0;
+  }
+  to {
+    background-position: 300px 0;
+  }
+}
