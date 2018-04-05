@@ -1,0 +1,64 @@
+@keyframes fade_in_out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfcf7;
+}
+
+.bubble {
+  display: flex;
+  position: relative;
+  width: 125px;
+  height: 75px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 75px;
+  background-color: #ddd;
+}
+.bubble::before, .bubble::after {
+  position: absolute;
+  content: '';
+  background: #ddd;
+  border-radius: 100%;
+}
+.bubble::before {
+  bottom: 0;
+  left: -6px;
+  width: 25px;
+  height: 25px;
+}
+.bubble::after {
+  bottom: -5px;
+  left: -18px;
+  width: 12.5px;
+  height: 12.5px;
+}
+
+.bubbleDot {
+  width: 20.8333333333px;
+  height: 20.8333333333px;
+  border-radius: 100%;
+  background-color: #bbb;
+  animation: fade_in_out 1.5s infinite;
+  animation-delay: 0.25s;
+}
+.bubbleDot:first-of-type {
+  margin-left: 20.8333333333px;
+  animation-delay: 0s;
+}
+.bubbleDot:last-of-type {
+  margin-right: 20.8333333333px;
+  animation-delay: 0.5s;
+}

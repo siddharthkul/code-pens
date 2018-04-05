@@ -1,0 +1,83 @@
+// declare variables
+$color: #ddd;
+$width: 125px;
+$height: $width * 0.6;
+$circle_size: $width / 6;
+$box-shadow: 0 0 .55rem rgba(17,17,17,0.5),0 0 .55rem rgba(17,17,17,0.5);
+$animation_time: 1.5s;
+$animation_delay: 0.5s;
+
+@keyframes fade_in_out {
+   0% { opacity: 1; }
+   50% { opacity: 0.25; }
+   100% { opacity: 1; }
+}
+
+.container {
+   display: flex;
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+   
+   background-color: #fbfcf7;
+}
+
+.bubble {
+   display: flex;
+   position: relative;
+   width: $width;
+   height: $height;
+   align-items: center;
+   justify-content: space-around;
+   
+   border-radius: $height;
+   background-color: $color;
+   // box-shadow: $box-shadow;
+   
+   &::before,
+   &::after {
+      position: absolute;
+      content: '';
+      
+      background: $color;
+      border-radius: 100%;
+      // box-shadow: $box-shadow;
+   }
+   
+   &::before {
+      bottom: 0;
+      left: -6px;
+      width: $height / 3;
+      height: $height / 3;
+   }
+   
+   &::after {
+      bottom: -5px;
+      left: -18px;
+      width: $height / 6;
+      height: $height / 6;
+   }
+}
+
+.bubbleDot {
+   width: $circle_size;
+   height: $circle_size;
+   
+   border-radius: 100%;
+   background-color: #bbb;
+   
+   animation: fade_in_out $animation_time infinite;
+   animation-delay: $animation_delay / 2;
+   
+   &:first-of-type {
+      margin-left: $circle_size;
+      
+      animation-delay: 0s;
+   }
+   
+   &:last-of-type {
+      margin-right: $circle_size;
+      
+      animation-delay: $animation_delay;
+   }
+}
